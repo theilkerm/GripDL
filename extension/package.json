@@ -1,0 +1,16 @@
+{
+  "name": "gripdl-extension",
+  "version": "1.0.0",
+  "description": "Firefox extension for GripDL",
+  "scripts": {
+    "build": "tsc && npm run bundle",
+    "bundle": "esbuild src/background.ts --bundle --outfile=background.js --format=esm --target=firefox109",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^119.0.0",
+    "esbuild": "^0.19.8",
+    "typescript": "^5.3.3"
+  }
+}
+

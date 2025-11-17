@@ -1,0 +1,58 @@
+# --- macOS & System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Node.js / Frontend (Tauri & Extension) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+
+# Build Outputs (Frontend)
+dist/
+build/
+out/
+.output/
+
+# --- Rust / Cargo (Backend) ---
+/target/
+**/target/
+
+# Crash logs
+rust-analyzer-*.json
+
+# --- Tauri Specific ---
+# Tauri build çıktıları
+src-tauri/target/
+src-tauri/gen/
+
+# Tauri ikon/asset önbellekleri (Gerekirse)
+src-tauri/icons/icon.icns
+src-tauri/icons/icon.ico
+
+# --- IDE & Editor ---
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+.cursorrules
+.cursor/
+
+# --- Environment Variables (Security) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# --- Misc ---
+*.log
+tmp/
+temp/
