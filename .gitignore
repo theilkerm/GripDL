@@ -19,6 +19,9 @@ dist/
 build/
 out/
 .output/
+# Extension build output
+extension/background.js
+extension/*.js.map
 
 # --- Rust / Cargo (Backend) ---
 /target/
@@ -28,13 +31,17 @@ out/
 rust-analyzer-*.json
 
 # --- Tauri Specific ---
-# Tauri build çıktıları
-src-tauri/target/
-src-tauri/gen/
+# Tauri build çıktıları (app/src-tauri/ altında)
+app/src-tauri/target/
+**/src-tauri/target/
+app/src-tauri/gen/
+**/src-tauri/gen/
 
 # Tauri ikon/asset önbellekleri (Gerekirse)
-src-tauri/icons/icon.icns
-src-tauri/icons/icon.ico
+app/src-tauri/icons/icon.icns
+app/src-tauri/icons/icon.ico
+**/src-tauri/icons/icon.icns
+**/src-tauri/icons/icon.ico
 
 # --- IDE & Editor ---
 .vscode/
